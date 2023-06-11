@@ -1,96 +1,64 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv=Content-Type content="text/html;>
-<meta name=Generator content="Microsoft Word 15 (filtered)">
-<style>
-<!--
- /* Font Definitions */
- @font-face
-	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;}
-@font-face
-	{font-family:等线;
-	panose-1:2 1 6 0 3 1 1 1 1 1;}
-@font-face
-	{font-family:"\@等线";
-	panose-1:2 1 6 0 3 1 1 1 1 1;}
-@font-face
-	{font-family:楷体;
-	panose-1:2 1 6 9 6 1 1 1 1 1;}
-@font-face
-	{font-family:"\@楷体";}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin:0cm;
-	text-align:justify;
-	text-justify:inter-ideograph;
-	font-size:10.5pt;
-	font-family:等线;}
-a:link, span.MsoHyperlink
-	{color:#0563C1;
-	text-decoration:underline;}
-.MsoChpDefault
-	{font-family:等线;}
- /* Page Definitions */
- @page WordSection1
-	{size:595.3pt 841.9pt;
-	margin:72.0pt 90.0pt 72.0pt 90.0pt;
-	layout-grid:15.6pt;}
-div.WordSection1
-	{page:WordSection1;}
--->
-</style>
+    <meta charset="UTF-8">
+    <title>影穹·方寸之间</title>
+    <meta author="RisingEntropy">
+    <link rel="stylesheet" href="css/scrollanim.min.css">
+    <link rel="stylesheet" href="css/kissui.css">
 
+    <link rel="stylesheet" href="css/index.css">
 </head>
+<body>
+<header>
+    <!--        <h1>Beagles</h1>-->
 
-<body bgcolor="#A8D08D" lang=ZH-CN link="#0563C1" vlink="#954F72"
-style='word-wrap:break-word;text-justify-trim:punctuation'>
-
-<div class=WordSection1 style='layout-grid:15.6pt'>
-
-<p class=MsoNormal align=center style='text-align:center'><span
-style='font-size:48.0pt'> 基于卷积神经网络的全色锐化研究 </span></p>
-
-<p class=MsoNormal align=center style='text-align:center'><span
-style='font-size:16.0pt;font-family:楷体;color:red'>使用方法：点击“上传文件”（或者拖拽文件到相应位置），上传<span
-lang=EN-US>.mat</span>格式数据，点击最下方锐化按钮查看锐化结果。</span></p>
-
-<p class=MsoNormal align=center style='text-align:center'><span
-style='font-size:12.0pt;font-family:楷体'>要求：<span lang=EN-US>.mat</span>文件中需要有：名为<span
-lang=EN-US>pan</span>的数组，形状是<span lang=EN-US>4Hx4Wx1</span>或者<span lang=EN-US>4Hx4W</span>；名为<span
-lang=EN-US>ms</span>的数组，形状是<span lang=EN-US>HxWx3</span>，<u><span
-style='color:red'>可以</span></u>不归一化到<span lang=EN-US>0-1</span>之间。</span></p>
-
-<p class=MsoNormal align=center style='text-align:center'><span
-style='font-size:14.0pt;font-family:楷体'>没有数据？示例数据下载：</span></p>
-
-<p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
-style='font-size:14.0pt;font-family:楷体'>Data1</span><span style='font-size:
-14.0pt;font-family:楷体'>：</span><span lang=EN-US style='font-size:12.0pt'><a
-href="http://cdn.pansharpening.com/new_data6.mat"><span lang=EN-US
-style='font-size:14.0pt;font-family:楷体'><span lang=EN-US>点击下载</span></span></a></span></p>
-
-<p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
-style='font-size:14.0pt;font-family:楷体'>Data2</span><span style='font-size:
-14.0pt;font-family:楷体'>：</span><span lang=EN-US style='font-size:12.0pt'><a
-href="http://cdn.pansharpening.com/new_data7.mat"><span lang=EN-US
-style='font-size:14.0pt;font-family:楷体'><span lang=EN-US>点击下载</span></span></a></span></p>
-
-<p class=MsoNormal align=center style='text-align:center'><b><i><span
-style='font-size:14.0pt;font-family:楷体'>加载需要时间，请耐心等候</span></i></b></p>
-
-<p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
-style='font-size:14.0pt;font-family:楷体'>&nbsp;</span></p>
-<script
-	type="module"
-	src="https://gradio.s3-us-west-2.amazonaws.com/3.24.1/gradio.js"
-></script>
-
-<gradio-app src="https://risingentropy-pansharpening.hf.space"></gradio-app>
-
+</header>
+<div id="top_content">
+    <div id="main_title">
+        欢迎使用影穹<img src="resource/logo.png" height="150" width="154">
+    </div>
+    <br>
+    <div id="button_group">
+        <input type="button" id="API_button" class="button" value="API 接口体验"
+               onclick='window.open("/APItrail.html")'>
+        <br>
+        <input type="button" id="contect_us" class="button" value="联系我们">
+    </div>
+</div>
+<br>
+<div data-kui-anim="fadeIn">
+    <p style="font-size: 85px; color: white; text-align: center;">影穹系统介绍</p>
+</div>
+<div data-kui-anim="fadeIn">
+    <p class="center_para" style="font-size: 45px">卫星图像全色锐化介绍</p>
+    <div style="text-align: center">
+        <img src="resource/intro_pan.png" height="500" width="800">
+    </div>
 </div>
 
-</body>
+<div data-kui-anim="fadeIn">
+    <p class="center_para" style="font-size: 45px">影穹创新</p>
+    <div style="text-align: center">
+        <img src="resource/shadow%20dome%20innov.png" height="500" width="1000">
+    </div>
+</div>
+<div data-kui-anim="fadeIn">
+    <p class="center_para" style="font-size: 45px">影穹成就</p>
+    <div style="text-align: center">
+        <img src="resource/achievement.png" height="500" width="1000">
+    </div>
+</div>
+<div data-kui-anim="fadeIn">
+    <p class="center_para" style="font-size: 45px">商业顾问</p>
+    <div style="text-align: center">
+        <img src="resource/counselor.png" height="500" width="892">
+    </div>
+</div>
 
+
+<script src="js/scrollanim.min.js"></script>
+
+
+</body>
 </html>

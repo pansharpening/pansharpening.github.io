@@ -1,0 +1,64 @@
+body{
+    background-image: url("../resource/background.png");
+}
+#top_content{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 100px;
+}
+#main_title{
+    text-align: center;
+    margin-top: 150px;
+    color:#ffffff;
+    font-size: 85px;
+}
+input[type="button"]{
+    margin-top: 20px;
+    margin-bottom: 40px ;
+    background: rgba(40, 75, 154, 0.8);
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    width: 300px;
+    height: 80px;
+    /*opacity: 70%;*/
+    border: none;
+    box-shadow: 0px 5px 5px #3e6456;
+}
+input[type="button"]:hover{
+    margin-top: 20px;
+    margin-bottom: 40px ;
+    background: rgb(40, 75, 154);
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    width: 300px;
+    height: 80px;
+    transition: 0.5s;
+    /*opacity: 70%;*/
+    border: none;
+    box-shadow: 0px 5px 5px #3e6456;
+}
+#button_group{
+    text-align: center;
+
+}
+#explanation_area{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background: rgba(42, 148, 197, 0.78);
+}
+#detail_intro{
+    margin-top: 100px;
+}
+.center_para{
+    text-align: center;
+    color: white;
+}
